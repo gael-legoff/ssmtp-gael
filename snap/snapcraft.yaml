@@ -1,18 +1,18 @@
 name: ssmtp-gael
-version: "v2.64-10-20250312"
-base: core22
+version: "v2.64-11"
+base: core24
 summary: Extremely simple MTA to get mail off the system to a mail hub
 description: A secure, effective and simple way of getting mail off a system to your mail hub. It contains no suid-binaries or other dangerous things - no mail spool to poke around in, and no daemons running in the background. Mail is simply forwarded to the configured mailhost. Extremely easy configuration.
 
 grade: stable
 confinement: strict
 
-architectures:
-  - build-on: arm64
-  - build-on: armhf
-  - build-on: amd64
-  - build-on: ppc64el
-  - build-on: s390x
+platforms:
+  arm64:
+  armhf:
+  amd64:
+  ppc64el:
+  s390x:
 
 license: "GPL-2.0"
 
